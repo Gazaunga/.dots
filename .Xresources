@@ -90,3 +90,11 @@ XTerm*translations: #override \
 
 ! Allow selecting email/url by double-click
 XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+! Man pages colors
+
+*VT100.colorBDMode:                  true
+*VT100.colorBD:                      red
+*VT100.colorULMode:                  true
+*VT100.colorUL:                      cyan   
+*VT100.veryBoldColors:               6
