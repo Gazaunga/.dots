@@ -11,6 +11,7 @@ GOROOT="$HOME/bin"
 GOPATH="$HOME/.go"
 SUDO_PROMPT="[sudo] auth $(tput bold)$(tput setaf 1)%U$(tput sgr0) "
 PATH=""
+TERM="/home/$USER/bin/urxvtc"
 
 # download folder is on ramdisk
 test -d "$HOME/tmp/downloads" || mkdir "$HOME/tmp/downloads"
