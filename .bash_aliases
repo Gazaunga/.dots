@@ -1,0 +1,11 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias src='source ~/.bashrc'
+alias free='free -mt'
+alias ps='ps auxf'
+alias home='cd ~/'
+alias desk='cd ~/Desktop'
+alias dl='cd ~/downloads'
+#alias fm='thunar $PWD'
+alias ytmp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
