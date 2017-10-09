@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/sh -x
+#  ╻ ╻╻┏┓╻╻╺┳╸┏━┓┏━╸
+#  ┏╋┛┃┃┗┫┃ ┃ ┣┳┛┃
+# ╹╹ ╹╹╹ ╹╹ ╹ ╹┗╸┗━╸
+# 
+
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
