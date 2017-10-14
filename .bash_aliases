@@ -25,3 +25,7 @@ alias glo='git log --oneline --decorate'
 alias gloh='git log --oneline --decorate | head'
 
 alias mount='mount |column -t'
+
+%% UBUNTU %%
+
+alias apt5='sudo apt-get check && sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove --purge && sudo apt-get autoclean'
