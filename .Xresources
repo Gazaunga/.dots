@@ -5,15 +5,24 @@ urxvt*background:           #33393b
 urxvt*foreground:           white
 urxvt*scrollBar:            false
 
-URxvt.perl-ext-common:      default,matcher
+URxvt.perl-ext-common:      default,matcher,clipboard
 URxvt.url-launcher:         /usr/bin/xdg-open
 URxvt.matcher.button:       1
+URxvt.matcher.rend.0: fg3
 
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
-URxvt.copyCommand:  xclip -i -selection clipboard
-URxvt.pasteCommand: xclip -o -selection clipboard
+!remove "clipboard" from perl-ext-common for xclip to work
+!URxvt.copyCommand:  xclip -i -selection clipboard
+!URxvt.pasteCommand: xclip -o -selection clipboard
+
+! Copy & Paste
+URxvt.iso14755: 0
+URxvt.iso14755_52: 0
+URxvt.clipboard.autocopy: 1
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 
 Xft*dpi:                    96
@@ -98,3 +107,6 @@ XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35
 *VT100.colorULMode:                  true
 *VT100.colorUL:                      cyan   
 *VT100.veryBoldColors:               6
+
+! Cursor theme
+Xcursor.theme: DMZ
