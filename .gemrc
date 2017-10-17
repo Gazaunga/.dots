@@ -1,9 +1,9 @@
 --- 
 :verbose: true
-gem: --no-rdoc --no-ri --user-install
+gem: --no-rdoc --no-ri
 :update_sources: true
 :sources: 
-- http://rubygems.org/g
+- http://rubygems.org/gems
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false
