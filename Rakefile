@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rake'
-import '.rake/progressbar.rb'
+import '.rake/progress_bar_test.rake'
 
 namespace :confirm do
   desc "lets you confirm the task before enacting"
