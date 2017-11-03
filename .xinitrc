@@ -49,4 +49,9 @@ fi
 
 dunst &
 urxvtd -q -f &
+
+# Cleanup unnecessary files
+rm -rf "$HOME/.cache/"
+rm -rf "$HOME/.thumbnails"
+rm -rf "$HOME/.local/share/Trash"
 #setxkbmap -option caps:escape
