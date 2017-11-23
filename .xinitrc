@@ -55,3 +55,8 @@ rm -rf "$HOME/.cache/"
 rm -rf "$HOME/.thumbnails"
 rm -rf "$HOME/.local/share/Trash"
 #setxkbmap -option caps:escape
+# Terminating Xorg with Ctrl+Alt+Backspace
+#setxkbmap -option terminate:ctrl_alt_bksp
+# Make caps-lock behave like ctrl or esc
+#setxkbmap -option caps:ctrl_modifier
+#xcape -e 'Caps_Lock=Escape'
