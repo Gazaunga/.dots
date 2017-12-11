@@ -10,7 +10,7 @@ LESS='-F -g -i -M -R -S -w -X -z-4'
 GOROOT="$HOME/bin"
 GOPATH="$HOME/.go"
 SUDO_PROMPT="[sudo] auth $(tput bold)$(tput setaf 1)%U$(tput sgr0) "
-PATH=""
+PATH="$PATH:$HOME/bin:$(ruby -rubygems -e "puts Gem.user_dir)/bin"
 TERM="/home/$USER/bin/urxvtc"
 
 # download folder is on ramdisk
