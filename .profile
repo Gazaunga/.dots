@@ -12,6 +12,8 @@ GOPATH="$HOME/.go"
 SUDO_PROMPT="[sudo] auth $(tput bold)$(tput setaf 1)%U$(tput sgr0) "
 PATH="$PATH:$HOME/bin:$(ruby -rubygems -e "puts Gem.user_dir)/bin"
 TERM="/home/$USER/bin/urxvtc"
+CC=/usr/bin/clang
+CXX=/usr/bin/clang++
 
 # download folder is on ramdisk
 test -d "$HOME/tmp/downloads" || mkdir "$HOME/tmp/downloads"
