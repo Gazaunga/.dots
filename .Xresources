@@ -1,4 +1,4 @@
-urxvt*font:                 xft:Ubuntu Mono:size=12
+urxvt*font:                 xft:iosevka:size=12
 
 urxvt*termName:             rxvt
 urxvt*background:           #33393b
@@ -83,7 +83,7 @@ XTerm*utf8Title: True
 XTerm*renderFont: True
 XTerm*preeditType: Root
 XTerm*xftAntialias: true
-XTerm*faceName: xft:DejaVu Sans Mono for Powerline-12
+XTerm*faceName: Glass_TTY_VT220:size=12
 
 ! Trim trailing spaces
 XTerm*trimSelection: true
