@@ -110,3 +110,10 @@ XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35
 
 ! Cursor theme
 Xcursor.theme: DMZ
+
+emacs.font:                 M+ 1mn-12
+emacs.paneFont:             M+ 1mn-12
+emacs.pointerColor:         white
+emacs.scrollBarWidth:       0
+emacs.useXIM:               true
+emacs.verticalScrollBars:   false
