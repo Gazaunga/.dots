@@ -32,7 +32,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 locale = fr_FR.UTF-8
-font-0 = Oxygen Mono:size=9;1
+font-0 = OfficeCodePro:size=9;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome:size=10.5;1
 modules-left = clock networkmanager workspace window_count 
@@ -62,33 +62,33 @@ click-left = firefox &
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
-click-left = gnome-terminal --geometry 110x24 -e ranger &
-click-right = pcmanfm &
+click-left = urxvt --geometry 110x24 -e ranger &
+click-right = thunar &
 
 [module/term]
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
-click-left = gnome-terminal &
+click-left = xterm &
 
 [module/editor]
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
 click-left = /opt/sublime_text/sublime_text &
-click-right = geany &
+click-right = mousepad &
 
-;[module/chrome]
+;[module/firefox]
 ;type = custom/text
 ;content = 
 ;content-foreground = ${colors.foreground}
-;click-left = google-chrome &
+;click-left = firefox &
 
 [module/music]
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
-click-left = gnome-terminal -e ncmpcpp &
+click-left = urxvt -e ncmpcpp &
 click-right = audacious &
 
 [module/workspace]
@@ -162,14 +162,14 @@ label-indicator-background = ${colors.background}
 ;interval = 1
 ;format-prefix = " "
 ;format-prefix-foreground = ${colors.foreground-alt}
-;label = %{A1:gnome-terminal --geometry 86x10 -e htop:}%percentage%%%{A}
+;label = %{A1:urxvt --geometry 86x10 -e htop:}%percentage%%%{A}
 
 ;[module/memory]
 ;type = internal/memory
 ;interval = 1
 ;format-prefix = " "
 ;format-prefix-foreground = ${colors.foreground-alt}
-;label = %{A1:gnome-terminal --geometry 86x10 -e htop:}%percentage_used%%%{A}
+;label = %{A1:urxvt --geometry 86x10 -e htop:}%percentage_used%%%{A}
 
 ;[module/date]
 ;type = custom/script
