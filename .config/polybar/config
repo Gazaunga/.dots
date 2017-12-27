@@ -50,13 +50,13 @@ tray-position =
 type = custom/text
 content = 
 content-foreground = ${colors.foreground}
-click-left = uzbl-tabbed &
+click-left = qutebrowser &
 
-[module/fx]
-type = custom/text
-content = 
-content-foreground = ${colors.foreground}
-click-left = firefox &
+;[module/fx]
+;type = custom/text
+;content = 
+;content-foreground = ${colors.foreground}
+;click-left = firefox &
 
 [module/fm]
 type = custom/text
