@@ -4,8 +4,8 @@
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
- */
-static char font[] = "RobotoMono:pixelsize=12:antialias=true:autohint=true";
+ RobotoMono */
+static char font[] = "M+1m:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
