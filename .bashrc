@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+#case $- in
+#    *i*) ;;
+#      *) return;;
+#esac
 
 # Advanced directory creation
 function mkcd {
