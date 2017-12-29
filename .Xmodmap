@@ -1,0 +1,11 @@
+remove Lock = Caps_Lock
+#remove Control = Control_L
+remove Control = Escape
+
+keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+#keysym Control_L = Escape
+
+add Control = Escape
+#add Control = Control_L
+add Lock = Caps_Lock
