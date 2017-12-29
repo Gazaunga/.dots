@@ -1,0 +1,19 @@
+## ┬┌┐┌┌┬┐┌─┐┬─┐┬─┐┌─┐┌┐ ┌─┐┌┐┌┌─┐
+## ││││ │ ├┤ ├┬┘├┬┘│ │├┴┐├─┤││││ ┬
+## ┴┘└┘ ┴ └─┘┴└─┴└─└─┘└─┘┴ ┴┘└┘└─┘
+
+## options
+set font = fixed
+set geometry = 400x20+640+520
+set border = 2px #b8b9b4
+set colors = #b8b9b4 #000000 #fff #fff #fff #fff
+set bangchar = :
+set autocomp = 1
+set list = true
+set last = true
+
+## bangs
+bang ff  = firefox
+bang ddg = firefox https://duckduckgo.com/?q=%s
+bang w   = firefox http://0wikipedia.org/
+bang img = viewnior %s
