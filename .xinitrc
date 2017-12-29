@@ -60,3 +60,5 @@ rm -rf "$HOME/.local/share/Trash"
 # Make caps-lock behave like ctrl or esc
 #setxkbmap -option caps:ctrl_modifier
 #xcape -e 'Caps_Lock=Escape'
+
+
