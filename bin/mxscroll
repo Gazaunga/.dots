@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# setpoint-like autoswitching scroll
+echo 5 0 8 12 | sudo tee /sys/bus/hid/devices/0005:046D:B007.0048/scrollmode
+
+# force freespin
+# echo 1 0 | sudo tee /sys/bus/hid/devices/0005:046D:B007.0048/scrollmode
+
+# force clicky
+# echo 2 0 | sudo tee /sys/bus/hid/devices/0005:046D:B007.0048/scrollmode
+
+# force clicky
+# echo 7 0 | sudo tee /sys/bus/hid/devices/0005:046D:B007.0048/scrollmode
