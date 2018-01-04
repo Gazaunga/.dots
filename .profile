@@ -15,6 +15,8 @@ TERM="/home/$USER/bin/urxvtc"
 CC=/usr/bin/clang
 CXX=/usr/bin/clang++
 GEM_HOME=$HOME/.gem
+#FOR ARCH USE THE BELOW
+#GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 # download folder is on ramdisk
 test -d "$HOME/tmp/downloads" || mkdir "$HOME/tmp/downloads"
