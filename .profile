@@ -14,6 +14,7 @@ PATH="$PATH:$HOME/bin:$(ruby -rubygems -e "puts Gem.user_dir)/bin"
 TERM="/home/$USER/bin/urxvtc"
 CC=/usr/bin/clang
 CXX=/usr/bin/clang++
+GEM_HOME=$HOME/.gem
 
 # download folder is on ramdisk
 test -d "$HOME/tmp/downloads" || mkdir "$HOME/tmp/downloads"
