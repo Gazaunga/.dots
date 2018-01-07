@@ -184,3 +184,7 @@ haste () {
 	echo "Upload failed."
 	return 1
 }
+
+function irbr() {
+irb -I . -r $1
+}
