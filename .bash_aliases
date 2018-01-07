@@ -37,6 +37,8 @@ alias ytmp3="youtube-dl --extract-audio --audio-format mp3"
 
 alias sxiv='sxiv -b'
 
+alias irbr="irb -I . -r"
+
 %% UBUNTU %%
 
 alias apt5='sudo apt-get check && sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove --purge && sudo apt-get autoclean'
