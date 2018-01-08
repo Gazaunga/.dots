@@ -4,7 +4,6 @@
 require 'rake'
 
 # Load all tasks in the directory '.rake' with the extension '.rake'
-# ~/.rake/{clean.rake, blog.rake, system.rake}
 Dir.glob(".rake/**.rake").each { |f| import f }
 
 # These files will be ignored to create symlink
