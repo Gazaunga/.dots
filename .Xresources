@@ -117,3 +117,13 @@ emacs.pointerColor:         white
 emacs.scrollBarWidth:       0
 emacs.useXIM:               true
 emacs.verticalScrollBars:   false
+
+
+! Xclock colors.
+XClock*foreground: #807A86
+XClock*background: #1D1C25
+XClock*majorColor:  rgba:80/7a/86/ff
+XClock*minorColor:  rgba:80/7a/86/ff
+XClock*hourColor:   rgba:80/7a/86/ff
+XClock*minuteColor: rgba:80/7a/86/ff
+XClock*secondColor: rgba:80/7a/86/ff
