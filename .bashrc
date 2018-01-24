@@ -161,3 +161,15 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 bind -x '"\C-p": vim $(fzf);'
 
 export FZF_ALT_C_COMMAND="cd ~/; bfs -type d -nohidden | sed s/^\./~/"
+
+# Status bar for DVTM
+trap 'echo -ne "\033]0; ${PWD/$HOME/~} | $BASH_COMMAND\007"' DEBUG
+function show_name(){ 
+    if [[ -n "$BASH_COMMAND" ]]; 
+    then 
+        echo -en "\033]0; ${PWD/$HOME/~}\007";
+    else 
+        echo -en "\033]0; ${PWD/$HOME/~} | $BASH_COMMAND\007";
+    fi 
+}
+export PROMPT_COMMAND='show_name'
