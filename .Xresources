@@ -127,3 +127,12 @@ XClock*minorColor:  rgba:80/7a/86/ff
 XClock*hourColor:   rgba:80/7a/86/ff
 XClock*minuteColor: rgba:80/7a/86/ff
 XClock*secondColor: rgba:80/7a/86/ff
+
+!! xst/st specific settings
+st.termname:    st-256color
+!st.font:        scientifica:size=7:hinting=full:antialias=false
+st.font:        dina10px:size=7:hinting=full:antialias=false
+st.cwscale:     1.1
+st.chscale:     1.1
+st.bellvolume:  0
+st.borderpx:    10px
