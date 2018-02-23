@@ -15,6 +15,7 @@ TERM="/home/$USER/bin/urxvtc"
 CC=/usr/bin/clang
 CXX=/usr/bin/clang++
 GEM_HOME=$HOME/.gem
+GEM_PATH=$HOME/.gem
 #FOR ARCH USE THE BELOW
 #GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
