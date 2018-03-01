@@ -140,3 +140,6 @@ st.borderpx:    10px
 UXTerm*background:	#130A07
 UXTerm*cursorColor:	#F3E9D5
 UXTerm*foreground:	#F3E9D5
+
+/* dzen2 */
+dzen2.font: xft:M+ 1m regular:size=11
