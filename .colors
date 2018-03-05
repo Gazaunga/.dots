@@ -1,3 +1,6 @@
+! base16 faded
+! Author: aesophor (github.com/aesophor)
+
 #define base00 #18181a
 #define base01 #282a2e
 #define base02 #373b41
