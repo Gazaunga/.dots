@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
+require 'pathname'
 
-dest = Dir.home
+dest = Pathname.new("#{Dir.home}/")
 
-Dir.glob(".dots/*") { |f| FileUtils.cp(f, dest, :verbose => true) }
+#Dir.glob("#{Dir.home}/.dots/*").each { |f| FileUtils.cp_r(f, dest, :verbose => true) }
+FileUtils.copy_entry(Dir["#{Dir.home}/.dots/**"], dest, :verbose => true)
