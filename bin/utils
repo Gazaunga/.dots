@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## ENV ##
+
+set -e # exits if any line returns an error
+
+set -x # reports actions explicitly as they run
+
 ## UTILS ##
 
 # Bold Colors for formatting
