@@ -2,6 +2,38 @@
 
 ## UTILS ##
 
+# Bold Colors for formatting
+g="\033[1;32m" # Green
+r="\033[1;31m" # Red
+y="\033[1;33m" # Yellow
+w="\033[1;37m" # White
+rs="\033[0m"   # Reset
+
+## example:: ${w}$HOME/.xinitrc${rs}"
+
+
+success()
+{
+    printf "[${g}OK${rs}] $1 ${w}$2${rs}\n"
+}
+
+warning()
+{
+    printf "[${y}XX${rs}] ${y}warning:${rs} $1 ${w}$2${rs}\n"
+}
+
+failure()
+{
+    printf "[${r}XX${rs}] ${r}failed:${rs} $1 ${w}$2${rs}\n"
+}
+
+die()
+{
+    "$@"
+    printf "${r}\nExiting${rs}\n"
+    exit 1
+}
+
 
 ## QUESTIONS ##
 
