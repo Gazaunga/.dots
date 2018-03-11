@@ -35,7 +35,7 @@ alias feh-set="feh --bg-fill"
 
 alias ytmp3="youtube-dl --extract-audio --audio-format mp3"
 
-alias sxiv='sxiv -b'
+alias sxiv='sxiv -b -q -s f 2>/dev/null'
 
 alias irbr="irb -I . -r"
 
