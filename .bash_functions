@@ -188,3 +188,9 @@ haste () {
 function irbr() {
 irb -I . -r $1
 }
+
+# Back up a file. Usage "backfile filename.txt"
+backupthis ()
+{
+    cp $1 ${1}-`date +%Y%m%d%H%M`.backup;
+}
