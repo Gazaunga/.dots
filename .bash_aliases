@@ -39,6 +39,44 @@ alias sxiv='sxiv -b -q -s f 2>/dev/null'
 
 alias irbr="irb -I . -r"
 
+# bundle (jekyll)
+if [ -x /usr/bin/bundler ]; then
+    alias bibu='bundle install --path vendor/bundle && bundle update'
+    alias bu='bundle update'
+    alias bejs='bundle exec jekyll serve'
+    alias bejsdev='bundle exec jekyll serve --config _config.yml,_config-dev.yml'
+fi
+
+if [ -x /usr/bin/flatpak ]; then
+    alias fuall="flatpak update"
+    # alias fuall="flatpak update $(flatpak list)"
+    alias fls="flatpak list"
+    alias fif="flatpak install --from"
+    alias fiu="flatpak uninstall"
+    alias fiuall="flatpak uninstall $(flatpak list)"
+fi
+
+# youtube-dl
+if [ -x /usr/bin/youtube-dl ]; then
+    alias ytaud='youtube-dl -ci --extract-audio --audio-format mp3 -o "~/Music/Youtube/%(title)s.%(ext)s"'
+    alias ytvid='youtube-dl --no-playlist --no-part --write-description --newline --prefer-free-formats -o "~/Videos/Youtube/%(title)s.%(ext)s" '
+fi
+
+if [ -x /usr/bin/apt ]; then
+    alias auu="sudo apt update && sudo apt upgrade"
+    alias aufu="sudo apt update && sudo apt full-upgrade"
+    alias ai="sudo apt install"
+    alias ar="sudo apt remove"
+    alias as="sudo apt search"
+    alias ash="sudo apt show"
+    alias aac="sudo apt autoclean"
+    alias aar="sudo apt autoremove"
+    alias ama="sudo apt-mark auto"
+    alias amm="sudo apt-mark manual"
+fi
+
+
 %% UBUNTU %%
 
 alias apt5='sudo apt-get check && sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove --purge && sudo apt-get autoclean'
+
