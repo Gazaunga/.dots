@@ -88,12 +88,12 @@ bind '"\e[B": history-search-forward'
 bind '"\e[C": forward-char'
 bind '"\e[D": backward-char'
 #
-unbind common <
-unbind common >
-unbind common p
-bind common > player-next
-bind common < player-prev
-bind common p player-pause
+#unbind common <
+#unbind common >
+#unbind common p
+#bind common > player-next
+#bind common < player-prev
+#bind common p player-pause
 
 # Prepend cd to directory names automatically
 shopt -s autocd 2> /dev/null
