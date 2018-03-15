@@ -194,3 +194,8 @@ backupthis ()
 {
     cp $1 ${1}-`date +%Y%m%d%H%M`.backup;
 }
+
+# For non systemd distros like Void (replacement for systemctl enable @service)
+enable(){
+    ln -s /etc/sv/$1 /var/service
+}
