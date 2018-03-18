@@ -10,6 +10,6 @@ temp() {
 }
 
 while true; do
-  BAR_INPUT="%{c}$(clock) : $(temp)"
+  BAR_INPUT="%{c}$(clock)"
   echo $BAR_INPUT
 done
