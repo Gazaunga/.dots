@@ -42,6 +42,26 @@ man() {
 			man "$@"
 }
 
+## Insert the current date with `notes date`. Store a note with `notes the earth is about 25k miles around` or `notes dentist appointment Thursday` or `notes purfunctory - carried out with a minimum of effort or reflection #vocab`. Look up recent notes with `notes` or read/search the entire notes database with `notes vim`.
+
+  notes() {
+  	local fpath=$HOME/notes.md
+  	if [ "$1" == "gvim" ]; then
+  		gvim + $fpath
+  	elif [ "$1" == "vim" ]; then
+  		gvim + $fpath
+  	elif [ "$1" == "date" ]; then
+  		echo '' >> $fpath
+  		echo '# '`date +"%m-%d-%Y-%T"` >> $fpath
+  		echo '---------------------' >> $fpath
+  	elif [ "$1" == "" ]; then
+  		less +G $fpath
+  	else
+  		echo '' >> $fpath
+  	    echo $@ >> $fpath
+  	fi
+  }
+
 alias rebash='. ~/.bashrc && clear'
 
 # Use bash-completion, if available
