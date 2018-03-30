@@ -63,7 +63,7 @@ man() {
   }
 
 alias rebash='. ~/.bashrc && clear'
-
+export PS2='アーク '
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
