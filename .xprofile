@@ -3,6 +3,6 @@ xsetroot -cursor_name left_ptr &
 xset +fp $HOME/.fonts
 xset fp rehash
 
-export DUNST_FONT='Artwiz Lemon 7'
+export DUNST_FONT='OfficeCodePro 7'
 export DUNST_SIZE='250x20-30+30'
 dunst -fn "$DUNST_FONT" -geometry "$DUNST_SIZE" &
