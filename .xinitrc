@@ -52,6 +52,7 @@ fi
 
 #dunst &
 #urxvtd -q -f &
+feh --bg-fill --randomize --no-fehbg $HOME/Wallpapers/*
 
 # Cleanup unnecessary files
 rm -rf "$HOME/.cache/"
