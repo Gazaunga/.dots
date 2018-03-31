@@ -1,6 +1,6 @@
 case "$1" in
   lock)
-    screenlock
+    bash ~/bin/Lockscreen/lock
     ;;
   suspend)
     systemctl suspend
