@@ -202,3 +202,6 @@ function show_name(){
     fi 
 }
 export PROMPT_COMMAND='show_name'
+
+## UTILS ##
+source bin/nicer-utils
