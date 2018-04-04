@@ -39,6 +39,8 @@ alias sxiv='sxiv -b -q -s f 2>/dev/null'
 
 alias irbr="irb -I . -r"
 
+alias m='env TERM=xterm-256color micro'
+
 # bundle (jekyll)
 if [ -x /usr/bin/bundler ]; then
     alias bibu='bundle install --path vendor/bundle && bundle update'
