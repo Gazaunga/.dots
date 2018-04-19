@@ -66,3 +66,7 @@ then
     (cd $NOTES_BASE_PATH; $EDITOR "journal/$today.txt")
   }
 fi
+
+if [ -n "$BASH" ] && [ -r ~/.bashrc ]; then
+    . ~/.bashrc
+fi
